@@ -1,0 +1,31 @@
+﻿1.git init  
+含义：初始化本地仓库
+2.git clone https://github.com/miaorunze1992/javaForHuang.git
+含义：拉取远程仓库代码到本地仓库
+3.git pull
+含义：提交代码之前与远程仓库最新代码保持同步
+4.git add .
+含义：把所有更改的代码提交到状态区待命
+5.git commit -m "代码解释说明"
+含义：预备提交的代码解释说明
+6.git push
+含义：推送状态区的代码到远程仓库，完成提交。
+
+7.git branch -a
+含义：查询本地以及远程分支
+8.git fetch
+含义：同步远程分支
+9.git checkout -b dev origin/dev
+含义：创建本地dev分支，并且关联远程dev
+
+10.git checkout dev
+含义：切换本地分支dev
+
+11.git stash
+含义：把本地修改的内容暂存，以便于切换分支。
+
+12.git stash pop
+含义：把当前分支的暂存代码恢复
+
+13.git merge origin/master
+含义：把远程主分支代码合并到当前分支。（注意解决冲突）
