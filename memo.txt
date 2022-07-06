@@ -29,3 +29,165 @@
 
 13.git merge origin/master
 含义：把远程主分支代码合并到当前分支。（注意解决冲突）
+
+
+==========================================================================================
+
+JAVA基础：
+1.src
+含义：所有后台java代码，都保存在src下面
+2.src包的层级结构 co.jp.demo
+含义：co文件夹
+		---下面的jp文件夹
+			---下面的demo文件夹
+				---day01文件夹
+3.ctrl + 代码放大   ctrl -  diamante缩小
+4.手敲main方法主方法
+
+public class Main {
+
+	public static void main(String[] args){
+		System.out.println("Hello World！！！");
+	}
+}
+
+public :修饰这个类，公共的 
+class：关键字
+Main：类名  类里面有什么？？？ 属性！（存取数据）    方法！（处理数据）
+
+主方法的含义？？？提供一个程序的主入口！！！可执行！！！
+
+public 公共的
+static 静态
+void 无返回值
+main 一定是main
+参数:一定是String[]
+args：形式参数？？？走他妈个形式的参数，本身没有任何意义。可以随便取名
+
+参数类型【空格！！！！！！！！！！！】形式参数
+
+==========================================================================================
+八大基本类型
+		byte total = 0;// 打印数为0
+		byte money = 20; // 工资为20 ，单位万
+		byte teaPrice = 100; // 茶价100，单位日元
+		byte carPrice = 100; // 车价100，单位万日元
+		
+		short aircraftCarrierOfChina = 3; //航母数量
+		short laptopTotal = 20; // 笔记本数量
+		short iphoneTotal = 2; // 苹果数量
+		short rice  = 3; // 大米3顿
+		
+		int person = 6; // 人数为6
+		int lengthOfRule = 20; // 尺子长度20cm
+		int lightTotal = 10; // 灯的数量
+		int commutingTime = 60; // 通勤时间60分钟
+		
+		long runMarathonTime = 600; // 长跑时间600分钟
+		long years = 365; // 365天			
+		long areaOfChina = 9600000; // 中国面积960万平方公里
+		long numberOfSheep = 20000000; //绵羊数量
+		
+		float heightOfLaoliu = 1.77f; 
+		float cola = 1.5f; // 可乐1.5升
+		float weightOfPig = 289.3f; // 289.3公斤重的猪
+		float liangdu = 80.0f; // 电脑亮度 80
+		
+		double interestRate = 1.35; // 利率1.35
+		double sniperBullets = 12.7; // 狙击子弹长度12.7mm
+		double WorldRecord = 9.58; // 百米世界记录 9.58秒
+ 		double fd = 1.7;
+		
+		
+		boolean leave = true;
+		boolean joinIn = false;
+		boolean javaProduct = true;
+		boolean pythonProduct = false;
+		
+		char firstNumber = '0';
+		char firstAlphabet = 'a';
+		char bestVitamin = 'C';
+		char firstWordOfChina = 'C'
+==========================================================================================
+基础运算
+		// 基本运算
+		// +  -  *  /  %  
+		int a = 1;
+		int b = 2;
+		
+//		double c = 1.0;
+//		double d = 2.0;
+		System.out.println("两个数的和为:" + (a + b));
+		System.out.println("两个数的差为:" + (a - b));
+		System.out.println("两个数的积为:" + a*b );
+		System.out.println("两个int数的商为:" + a/b);
+		System.out.println("两个double数的商为:" + (double)a/b);
+		System.out.println("a取余b结果为：" + 3 % 21);
+==========================================================================================
+流程以及控制
+if(){}else{}  二选一
+if(){}else if(){}else{}  三选一
+
+if(){}
+if(){}
+if(){}
+
+
+// 100~80 优秀/20   5~4   4
+// 80~60合格 /20  4~3    3
+// 60~0不合格
+		
+int a = 100;
+
+switch(a/20){
+	case 5:
+		System.out.println("优秀");
+	break;
+	case 4:
+		System.out.println("优秀");
+		break;
+	case 3:
+		System.out.println("合格");
+		break;
+	default:
+		System.out.println("不合格");
+}
+
+
+	for(int i=0; i<5; i++){
+			String str = "";
+			for(int j=5;j>i;j--){
+				str +="*";
+			}
+			System.out.println(str);
+		}
+
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+==========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
