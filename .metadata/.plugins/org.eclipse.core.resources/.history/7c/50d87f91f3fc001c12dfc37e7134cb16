@@ -1,0 +1,23 @@
+package co.jp.demo.day01;
+
+public class Main {
+	
+	// a作为类的属性，属性的类型为byte
+	byte a;
+	
+
+	public static void main(String[] args){
+		System.out.println("Hello World！！！");
+		// 整形
+		byte a = 0;
+		short b = 0;
+		int c = 0;
+		long d = 0l;
+		
+	}
+	
+	// 类方法
+	public static void main(String args){
+		System.out.println("Hello JAPAN！！！" + args);
+	}
+}

@@ -1,0 +1,32 @@
+package co.jp.demo.day01;
+
+public class Main {
+	
+	// a作为类的属性，属性的类型为byte
+	byte a;
+	
+
+	public static void main(String[] args){
+		System.out.println("Hello World！！！");
+		// 整数
+		byte a = 0;
+		short b = 0;
+		int c = 0;
+		long d = 0l;
+		// 浮点型
+		float f = 0f;
+		double g = 0d;
+		
+		// 布尔类型
+		boolean h = true;
+		// 字符类型
+		
+		
+		
+	}
+	
+	// 类方法
+	public static void main(String args){
+		System.out.println("Hello JAPAN！！！" + args);
+	}
+}

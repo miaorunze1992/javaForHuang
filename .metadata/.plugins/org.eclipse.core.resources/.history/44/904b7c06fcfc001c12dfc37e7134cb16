@@ -1,0 +1,22 @@
+package co.jp.demo.day01;
+
+public class Main {
+	
+	public static void main(String[] args){
+		
+		// 基本运算
+		// +  -  *  /  %  
+		int a = 1;
+		int b = 2;
+		System.out.println("两个数的和为:" + (a + b));
+		System.out.println("两个数的差为:" + (a - b));
+		System.out.println("两个数的积为:" + a*b );
+		
+		
+	}
+	
+	// 类方法
+	public static void main(String args){
+		System.out.println("Hello JAPAN！！！" + args);
+	}
+}

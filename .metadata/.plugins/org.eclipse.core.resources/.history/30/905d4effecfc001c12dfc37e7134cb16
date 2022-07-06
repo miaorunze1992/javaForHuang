@@ -1,0 +1,6 @@
+package co.jp.demo.day01;
+
+public class Main {
+
+		System.out.println("Hello World£¡£¡£¡");
+}
