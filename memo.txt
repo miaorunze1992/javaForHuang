@@ -21,10 +21,10 @@
 10.git checkout dev
 含义：切换本地分支dev
 
-11.git stash
+11.git stash       a->b      (ccc)
 含义：把本地修改的内容暂存，以便于切换分支。
 
-12.git stash pop
+12.git stash pop   a(ccc)->b      
 含义：把当前分支的暂存代码恢复
 
 13.git merge origin/master
@@ -88,7 +88,7 @@ args：形式参数？？？走他妈个形式的参数，本身没有任何意�
 		long areaOfChina = 9600000; // 中国面积960万平方公里
 		long numberOfSheep = 20000000; //绵羊数量
 		
-		float heightOfLaoliu = 1.77f; 
+		float heightOfLaoliu = (float)1.77; 
 		float cola = 1.5f; // 可乐1.5升
 		float weightOfPig = 289.3f; // 289.3公斤重的猪
 		float liangdu = 80.0f; // 电脑亮度 80
@@ -142,7 +142,7 @@ int a = 100;
 switch(a/20){
 	case 5:
 		System.out.println("优秀");
-	break;
+		break;
 	case 4:
 		System.out.println("优秀");
 		break;
@@ -154,19 +154,193 @@ switch(a/20){
 }
 
 
-	for(int i=0; i<5; i++){
+
+
+==========================================================================================
+循环  
+		format （代码格式化）
+		for (int i = 0; i < 5; i++) {
+			System.out.println("*****");
+		}
+
+		System.out.println("====================================");
+
+		String str1 = "";
+		for (int j = 0; j < 5; j++) {
+			str1 += "*";
+			System.out.println(str1);
+		}
+
+		System.out.println("====================================");
+
+		for (int i = 0; i < 5; i++) { // 外层循环
 			String str = "";
-			for(int j=5;j>i;j--){
-				str +="*";
+			for (int j = 5; j > i; j--) { // 内层循环 循环次数是动态的
+				str += "*";
 			}
 			System.out.println(str);
 		}
 
 ==========================================================================================
+字符串
+
+		// 变量类型 变量名 = 直接赋值(字符串) =====>此方法相当于直接创建变量并赋值
+		String str = "netwisdom";
+
+		// 变量类型 变量名 = new 变量类型() =====>此方法相当于的调用类的构造方法，创建的变量
+		String str1 = new String("netwisdom");
+
+		String s1 = "abc";
+		String s2 = new String("abc");
+		String s4 = new String("abc");
+		String s3 = "abc";
+
+		// 变量.方法名()
+		//System.out.println(s3.charAt(2));
+
+		//System.out.println(s2.equals(s4));
+
+		// int转字符串
+		int num = 456;
+		System.out.println(num);
+		String numToStr1 = "" + num;
+		System.out.println(numToStr1);
+		String numToStr2 = String.valueOf(num);
+		String numToStr3 = Integer.toString(num);
+		
+		String gender = "0";
+		int genderInt = Integer.parseInt(gender);
+		
+		char[] nameStr = {'m','i','a','o'};
+		String name =  new String(nameStr);
+		name = name.toUpperCase();
+		System.out.println(name);
 ==========================================================================================
+遍历数组 
+1、普通循环遍历数组
+2、foreach循环遍历数组
+
+		// Object json
+		int[] intArr1 = { 123, 5454 };
+		int[] intArr2 = { 455, 123 };
+		int[][] intArrArr = { intArr1, intArr2 };
+		// 俄罗斯套娃！！！数据的一层套着一层
+
+		int[][] intArr = { { 123, 5454 }, { 455, 123 } };
+		// 普通for循环
+//		for(int i=0;i<intArr.length;i++){
+//			for(int j =0;j<intArr[i].length;j++){
+//				System.out.println(intArr[i][j]);
+//			}
+//		}
+		// foreach循环
+		for(int[] intArrOne:intArr){
+			for(int rs:intArrOne){
+				System.out.println(rs);
+			}
+		}
+
 ==========================================================================================
+方法：
+	public static void main(String[] args){
+		method1();
+		
+		// 发生方法重载，方法名一样，通过不同的参数，调用相应的方法。
+		method2("李四");
+		method2(5);
+		method2(6,"王五");
+		
+		int abc = method3("冯六");
+		System.out.println(abc);
+	}
+	
+	// 无参无返回值
+	private static void method1(){
+		System.out.println("无参无返回值，被调用");
+	} 
+	
+	// 方法的重载 ，简单来讲：方法名一样，参数类型以及个数不一样
+	// 有参无返回值
+	private static void method2(String param1){
+		System.out.println("有参无返回值，被调用" + "参数为" + param1);
+	}
+	
+	// 同名方法有参无返回值,参数为int类型 
+	private static void method2(int param1){
+		System.out.println("有参无返回值，被调用" + "参数为" + param1);
+	}
+	
+	// 同名方法有参无返回值,参数为int类型 
+	private static void method2(int param1,String param2){
+		System.out.println("有参无返回值，被调用" + "参数为" + param1);
+	}
+	
+	// 有参有返回值的函数
+	private static int method3(String username){
+		return 30;
+	}
+	
+	类里面有main方法，和一个打印用得方法
+	
+	
+	
+	private static final String[] nameArray = {"张三","李四","王五"};
+	
+	public static void main(String[] args){
+		print(nameArray);
+	}
+	
+	public static void print(String[] nameArray){
+		for (String one : nameArray) {
+			System.out.println(one);
+		}
+	}
+	
+
+
+
 ==========================================================================================
-==========================================================================================
+	// 什么是类?对标数据库的表
+	// 什么是类的属性？对标数据库的表的字段
+	public static void main(String[] args) {
+		
+		// 没有引入java类概念时，存3条数据
+		int id = 1;
+		String name = "张三";
+		String gender = "0";
+		
+		int id2 = 2;
+		String name2 = "李四";
+		String gender2 = "1";
+		
+		int id3 = 3;
+		String name3 = "王五";
+		String gender3 = "1";
+		// 创建了9个变量，存了3条数据       100条数据 ==》300变量
+		
+		Student student1 = new Student();
+		student1.id = 1;
+		student1.name = "张三";
+		student1.gender = "0";
+		
+		Student student2 = new Student();
+		student2.id = 2;
+		student2.name = "李四";
+		student2.gender = "1";
+		
+		Student student3 = new Student();
+		student3.id = 3;
+		student3.name = "王五";
+		student3.gender = "1";
+		// 创建了3个变量，存了3条数据       100条数据 ==》300变量
+		
+	}
+
+
+
+
+
+
 ==========================================================================================
 ==========================================================================================
 ==========================================================================================
